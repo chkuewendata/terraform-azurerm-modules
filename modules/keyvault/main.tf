@@ -15,7 +15,7 @@ resource "azurerm_key_vault" "key_vault" {
     ip_rules                   = []
     virtual_network_subnet_ids = []
   }
-  public_network_access_enabled = false
+  public_network_access_enabled = true
   purge_protection_enabled      = true
   sku_name                      = var.key_vault_sku_name
   soft_delete_retention_days    = var.key_vault_soft_delete_retention_days

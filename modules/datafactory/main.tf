@@ -23,7 +23,7 @@ resource "azurerm_data_factory" "data_factory" {
   customer_managed_key_identity_id = var.customer_managed_key == null ? null : var.customer_managed_key.user_assigned_identity_id
   managed_virtual_network_enabled  = true
   purview_id                       = var.data_factory_purview_id
-  public_network_enabled           = false
+  public_network_enabled           = true
 
   dynamic "global_parameter" {
     for_each = var.data_factory_global_parameters

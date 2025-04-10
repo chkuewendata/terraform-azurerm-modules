@@ -8,7 +8,7 @@ resource "azurerm_databricks_workspace" "databricks_workspace" {
   custom_parameters {
     machine_learning_workspace_id                        = var.databricks_workspace_machine_learning_workspace_id
     nat_gateway_name                                     = null
-    no_public_ip                                         = true
+    no_public_ip                                         = false
     private_subnet_name                                  = var.databricks_workspace_private_subnet_name
     private_subnet_network_security_group_association_id = var.databricks_workspace_private_subnet_network_security_group_association_id
     public_ip_name                                       = null

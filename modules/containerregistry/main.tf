@@ -37,7 +37,7 @@ resource "azurerm_container_registry" "container_registry" {
       ip_rule        = []
     }
   ]
-  public_network_access_enabled = false
+  public_network_access_enabled = true
   quarantine_policy_enabled     = var.container_registry_quarantine_policy_enabled
   retention_policy_in_days      = var.container_registry_retention_policy_in_days
   sku                           = "Premium"

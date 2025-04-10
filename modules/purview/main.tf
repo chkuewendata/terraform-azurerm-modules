@@ -17,7 +17,7 @@ resource "azapi_resource" "purview_account" {
     properties = {
       # cloudConnectors = null # Causes plan issues
       ingestionStorage = {
-        publicNetworkAccess = "Disabled"
+        publicNetworkAccess = "Enabled"
       }
       managedEventHubState                = "Disabled"
       managedResourceGroupName            = "${var.purview_account_name}-rg"

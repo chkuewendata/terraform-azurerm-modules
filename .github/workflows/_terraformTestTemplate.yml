@@ -60,7 +60,7 @@ permissions:
 jobs:
   lint:
     name: Terraform Lint
-    runs-on: [ubuntu-latest]
+    runs-on: [ubuntu_latest]
     continue-on-error: false
 
     steps:
